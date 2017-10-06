@@ -62,10 +62,11 @@ We don't accept fraction coefficients, sorry!
 """)
 
 # Harvests the inputs from the user
-x = int(input('How many terms are in your equation? (Include powers with 0 coefficient)'))
-if x < 1 or x%1 != 0:
+x = int(input('Degree of polynomial?'))
+if x < 0 or x%1 != 0:
     print('Nice try')
     sys.exit()
+x += 1
 y = int(input('What is the coefficient of the highest power? (Include powers with 0 coefficient)'))
 coefficients.append(y)
 negCoefficients.append(y)
