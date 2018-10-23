@@ -27,6 +27,7 @@ firstOutput = ''
 finalOutput = ''
 
 # Synthetically divide a polynomial by another, as represented by integer lists.
+### syntheticDivision :: [Integer] -> [Integer] -> [Integer]
 def syntheticDivision(dividend, divisor):
     divis = list(dividend)
     divid = divisor[0]
@@ -43,6 +44,7 @@ def syntheticDivision(dividend, divisor):
         return 0
 
 # Returns all factors of an integer input
+### factors :: Integer -> [Integer]
 def factors(x):
     global tempList
     tempList = []
